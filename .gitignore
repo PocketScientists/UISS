@@ -1,3 +1,5 @@
 .idea
 Pods
 *.xcworkspace
+xcuserdata
+.DS_Store
