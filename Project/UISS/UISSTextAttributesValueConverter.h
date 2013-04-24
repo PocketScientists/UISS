@@ -7,6 +7,7 @@
 
 #define UISS_FONT_KEY @"font"
 #define UISS_TEXT_COLOR_KEY @"textColor"
+#define UISS_HIGHLIGHTED_TEXT_COLOR_KEY @"highlightedTextColor"
 #define UISS_TEXT_SHADOW_COLOR_KEY @"textShadowColor"
 #define UISS_TEXT_SHADOW_OFFSET_KEY @"textShadowOffset"
 

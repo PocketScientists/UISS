@@ -58,6 +58,9 @@
 
         [self convertProperty:UISS_TEXT_COLOR_KEY fromDictionary:dictionary toDictionary:attributes withKey:UITextAttributeTextColor
                usingConverter:self.colorConverter];
+        
+        [self convertProperty:UISS_HIGHLIGHTED_TEXT_COLOR_KEY fromDictionary:dictionary toDictionary:attributes withKey:@"UISSTextAttributeHighlightedTextColor"
+               usingConverter:self.colorConverter];
 
         [self convertProperty:UISS_TEXT_SHADOW_COLOR_KEY fromDictionary:dictionary toDictionary:attributes withKey:UITextAttributeTextShadowColor
                usingConverter:self.colorConverter];
@@ -88,6 +91,11 @@
         id textColorValue = [dictionary objectForKey:UISS_TEXT_COLOR_KEY];
         if (textColorValue) {
             [objectAndKeys appendFormat:@"%@, %@,", [self.colorConverter generateCodeForValue:textColorValue], @"UITextAttributeTextColor"];
+        }
+        
+        id highlightedTextColorValue = [dictionary objectForKey:UISS_HIGHLIGHTED_TEXT_COLOR_KEY];
+        if (highlightedTextColorValue) {
+            [objectAndKeys appendFormat:@"%@, %@,", [self.colorConverter generateCodeForValue:highlightedTextColorValue], @"UISSTextAttributeHighlightedTextColor"];
         }
 
         id textShadowColor = [dictionary objectForKey:UISS_TEXT_SHADOW_COLOR_KEY];

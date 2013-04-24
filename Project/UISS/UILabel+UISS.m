@@ -4,6 +4,8 @@
 
 #import "UILabel+UISS.h"
 
+NSString *const UISSTextAttributeHighlightedTextColor = @"UISSTextAttributeHighlightedTextColor";
+
 @implementation UILabel (UISS)
 
 - (void)setTextAttributes:(NSDictionary *)textAttributes;
@@ -24,6 +26,10 @@
     if (shadowOffsetValue) {
         UIOffset shadowOffset = [shadowOffsetValue UIOffsetValue];
         self.shadowOffset = CGSizeMake(shadowOffset.horizontal, shadowOffset.vertical);
+    }
+    UIColor *highlightedTextColor = [textAttributes objectForKey:UISSTextAttributeHighlightedTextColor];
+    if (highlightedTextColor) {
+        self.highlightedTextColor = highlightedTextColor;
     }
 }
 
