@@ -16,6 +16,8 @@
 		C8D2BABA25A2F8B6734D5E39 /* UISSImageResizingModeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeConverter.h */; };
 		C8D2BDE3D04A0D24CCA2E6B8 /* UISSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */; };
 		C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
+		D4B2CF5F174B9C3D007FAE3A /* UISSContentModeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */; };
+		D4B2CF60174B9C3D007FAE3A /* UISSContentModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */; };
 		E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; };
 		E1076BEB157F6B1A00886759 /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
 		E10D5E551574BBA400185009 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E4B1574BBA400185009 /* Icon-72.png */; };
@@ -203,6 +205,8 @@
 		C8D2BB6EF9D36E1EAF33EC36 /* UISS+GestureRecognizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISS+GestureRecognizers.m"; sourceTree = "<group>"; };
 		C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSSettingsViewController.m; sourceTree = "<group>"; };
 		C8D2BEDF507CA856D0EC5FDF /* UISSControlStateValueConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSControlStateValueConverterTests.m; sourceTree = "<group>"; };
+		D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSContentModeValueConverter.h; sourceTree = "<group>"; };
+		D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSContentModeValueConverter.m; sourceTree = "<group>"; };
 		E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSStatusViewController.h; sourceTree = "<group>"; };
 		E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSStatusViewController.m; sourceTree = "<group>"; };
 		E10D5E4B1574BBA400185009 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -495,16 +499,18 @@
 				E129E5ED1563F54800E93185 /* UISSAbstractEnumValueConverter.m */,
 				E129E5DC1563DE5000E93185 /* UISSBarMetricsValueConverter.h */,
 				E129E5DD1563DE5000E93185 /* UISSBarMetricsValueConverter.m */,
+				D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */,
+				D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */,
 				E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */,
 				E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */,
+				C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeConverter.h */,
+				C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeConverter.m */,
+				E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */,
+				E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */,
 				E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */,
 				E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */,
 				E1A775B01566E8D6000406CC /* UISSToolbarPositionConverter.h */,
 				E1A775B11566E8D6000406CC /* UISSToolbarPositionConverter.m */,
-				E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */,
-				E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */,
-				C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeConverter.m */,
-				C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeConverter.h */,
 			);
 			name = "UIKit Enums";
 			sourceTree = "<group>";
@@ -964,6 +970,7 @@
 				C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */,
 				C8D2B5AED4BB2B1D68E5BA5C /* UISS+GestureRecognizers.h in Headers */,
 				E1C64FF616DFE8AF004861ED /* UISSMacros.h in Headers */,
+				D4B2CF5F174B9C3D007FAE3A /* UISSContentModeValueConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1171,6 +1178,7 @@
 				C8D2BDE3D04A0D24CCA2E6B8 /* UISSSettingsViewController.m in Sources */,
 				C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */,
 				C8D2BA99525048D454BCA45D /* UISS+GestureRecognizers.m in Sources */,
+				D4B2CF60174B9C3D007FAE3A /* UISSContentModeValueConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
 #import "UISSUIntegerValueConverter.h"
 #import "UISSFloatValueConverter.h"
 #import "UISSBarMetricsValueConverter.h"
+#import "UISSContentModeValueConverter.h"
 #import "UISSControlStateValueConverter.h"
 #import "UISSSegmentedControlSegmentValueConverter.h"
 #import "UISSToolbarPositionConverter.h"
@@ -50,6 +51,8 @@
                             [[UISSEdgeInsetsValueConverter alloc] init],
                             [[UISSRectValueConverter alloc] init],
                             [[UISSOffsetValueConverter alloc] init],
+            
+                            [[UISSContentModeValueConverter alloc] init],
 
                             [[UISSIntegerValueConverter alloc] init],
                             [[UISSUIntegerValueConverter alloc] init],
