@@ -21,9 +21,9 @@
 		C8D2BDE3D04A0D24CCA2E6B8 /* UISSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */; };
 		C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B9582FDA98878B10CBA5 /* UISSTextAlignmentValueConverter.h */; };
 		C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
+		C8D2BF8B489FC38682ED03F5 /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
 		D4B2CF5F174B9C3D007FAE3A /* UISSContentModeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */; };
 		D4B2CF60174B9C3D007FAE3A /* UISSContentModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */; };
-		C8D2BF8B489FC38682ED03F5 /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
 		E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; };
 		E1076BEB157F6B1A00886759 /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
 		E10D5E551574BBA400185009 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E4B1574BBA400185009 /* Icon-72.png */; };
@@ -216,9 +216,9 @@
 		C8D2BE31C5F42A9DC7EFCA6B /* UIFont+UISS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+UISS.h"; sourceTree = "<group>"; };
 		C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSSettingsViewController.m; sourceTree = "<group>"; };
 		C8D2BEDF507CA856D0EC5FDF /* UISSControlStateValueConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSControlStateValueConverterTests.m; sourceTree = "<group>"; };
+		C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UISS.m"; sourceTree = "<group>"; };
 		D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSContentModeValueConverter.h; sourceTree = "<group>"; };
 		D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSContentModeValueConverter.m; sourceTree = "<group>"; };
-		C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UISS.m"; sourceTree = "<group>"; };
 		E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSStatusViewController.h; sourceTree = "<group>"; };
 		E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSStatusViewController.m; sourceTree = "<group>"; };
 		E10D5E4B1574BBA400185009 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -526,8 +526,8 @@
 				D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */,
 				E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */,
 				E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */,
-				C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeConverter.h */,
-				C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeConverter.m */,
+				C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeValueConverter.h */,
+				C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */,
 				E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */,
 				E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */,
 				E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */,
