@@ -22,7 +22,7 @@
     [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id object, BOOL *stop) {
         UIUserInterfaceIdiom idiom = (UIUserInterfaceIdiom) [self userInterfaceIdiomFromKey:key];
         
-        if (idiom == NSNotFound) {
+        if ((NSUInteger)idiom == NSNotFound) {
             [preprocessed setObject:[self preprocessValueIfNecessary:object userInterfaceIdiom:userInterfaceIdiom] forKey:key];
         } else {
             if (idiom == userInterfaceIdiom) {
