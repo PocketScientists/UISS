@@ -3,7 +3,7 @@
 //
 
 #import "UISSTextAlignmentValueConverter.h"
-
+#import <UIKit/UIKit.h>
 
 @implementation UISSTextAlignmentValueConverter
 

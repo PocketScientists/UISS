@@ -3,6 +3,7 @@
 //
 
 #import "UISSControlStateValueConverter.h"
+#import <UIKit/UIKit.h>
 
 @implementation UISSControlStateValueConverter
 

@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "UISSArgumentValueConverter.h"
 
 #define UISS_FLOAT_VALUE_CONVERTER_DEFAULT_PRECISION 1

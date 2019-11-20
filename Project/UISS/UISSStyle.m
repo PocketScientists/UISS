@@ -3,6 +3,7 @@
 //
 
 #import "UISSStyle.h"
+#import <UIKit/UIKit.h>
 
 NSString *const UISSStyleWillDownloadNotification = @"UISSStyleWillDownloadNotification";
 NSString *const UISSStyleDidDownloadNotification = @"UISSStyleDidDownloadNotification";

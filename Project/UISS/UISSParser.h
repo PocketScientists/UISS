@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define UISS_PARSER_DEFAULT_GROUP_PREFIX @"@"
 

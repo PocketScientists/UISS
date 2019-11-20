@@ -7,6 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A98C3D322385EDAB00CBAE67 /* UISSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A98C3D302385EDAB00CBAE67 /* UISSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A98C3D352385EDAB00CBAE67 /* UISSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C3D2E2385EDAB00CBAE67 /* UISSKit.framework */; };
+		A98C3D362385EDAB00CBAE67 /* UISSKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A98C3D2E2385EDAB00CBAE67 /* UISSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A98C3D3B2385EDFD00CBAE67 /* NSString+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8571584AF820087BB1B /* NSString+UISS.m */; };
+		A98C3D3C2385EE0300CBAE67 /* NSArray+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E16055371684F90100722458 /* NSArray+UISS.m */; };
+		A98C3D3D2385EE0800CBAE67 /* UISSCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54EE15A81F56005AFD13 /* UISSCodeGenerator.m */; };
+		A98C3D3E2385EE0C00CBAE67 /* UISSError.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C08346158E334E007A88E6 /* UISSError.m */; };
+		A98C3D3F2385EE1000CBAE67 /* UISSStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F6E2F3157EC35B00A5187E /* UISSStatusWindow.m */; };
+		A98C3D402385EE1400CBAE67 /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
+		A98C3D412385EE1800CBAE67 /* UISSStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BBEBEE1598776C001F7A60 /* UISSStatusView.m */; };
+		A98C3D422385EE1C00CBAE67 /* UISSConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BCCC34157F634B001E4429 /* UISSConsoleViewController.m */; };
+		A98C3D432385EE1C00CBAE67 /* UISSGeneratedCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C67BD5158CCBD800E220BB /* UISSGeneratedCodeViewController.m */; };
+		A98C3D442385EE1C00CBAE67 /* UISSErrorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18C7C1E158F52B1000D45AC /* UISSErrorsViewController.m */; };
+		A98C3D452385EE2400CBAE67 /* UISSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */; };
+		A98C3D462385EE2400CBAE67 /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
+		A98C3D472385EE2800CBAE67 /* UISSPropertySetter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF21157AA24E00BFB3D1 /* UISSPropertySetter.m */; };
+		A98C3D482385EE2800CBAE67 /* UISSArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF26157ABBA800BFB3D1 /* UISSArgument.m */; };
+		A98C3D492385EE2800CBAE67 /* UISSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF2A157ABBC900BFB3D1 /* UISSProperty.m */; };
+		A98C3D4A2385EE2800CBAE67 /* UISSAxisParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF2E157ABBDF00BFB3D1 /* UISSAxisParameter.m */; };
+		A98C3D4B2385EE2F00CBAE67 /* UISSVariablesPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775BB1567945D000406CC /* UISSVariablesPreprocessor.m */; };
+		A98C3D4C2385EE2F00CBAE67 /* UISSUserInterfaceIdiomPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B384A1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.m */; };
+		A98C3D4D2385EE2F00CBAE67 /* UISSDisabledKeysPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E43BC159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.m */; };
+		A98C3D4E2385EE3300CBAE67 /* UISSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469859155A85EC000F311F /* UISSParser.m */; };
+		A98C3D4F2385EE3300CBAE67 /* UISSParserContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54E815A7689D005AFD13 /* UISSParserContext.m */; };
+		A98C3D502385EE3800CBAE67 /* UILabel+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A7739715668F80000406CC /* UILabel+UISS.m */; };
+		A98C3D512385EE3800CBAE67 /* UIView+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F35EB01593A3F20074389E /* UIView+UISS.m */; };
+		A98C3D522385EE3E00CBAE67 /* UISSAbstractEnumValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5ED1563F54800E93185 /* UISSAbstractEnumValueConverter.m */; };
+		A98C3D532385EE3E00CBAE67 /* UISSBarMetricsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5DD1563DE5000E93185 /* UISSBarMetricsValueConverter.m */; };
+		A98C3D542385EE3E00CBAE67 /* UISSContentModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */; };
+		A98C3D552385EE3E00CBAE67 /* UISSControlStateValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */; };
+		A98C3D562385EE3E00CBAE67 /* UISSSegmentedControlSegmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */; };
+		A98C3D572385EE3E00CBAE67 /* UISSToolbarPositionValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775B11566E8D6000406CC /* UISSToolbarPositionValueConverter.m */; };
+		A98C3D582385EE3E00CBAE67 /* UISSSearchBarIconValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */; };
+		A98C3D592385EE3E00CBAE67 /* UISSImageResizingModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */; };
+		A98C3D5A2385EE3E00CBAE67 /* UISSTextAlignmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B46579BB4A74DA7B5D27 /* UISSTextAlignmentValueConverter.m */; };
+		A98C3D5B2385EE4500CBAE67 /* UISSColorValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146983F155905FE000F311F /* UISSColorValueConverter.m */; };
+		A98C3D5C2385EE4500CBAE67 /* UISSImageValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984D1559B24C000F311F /* UISSImageValueConverter.m */; };
+		A98C3D5D2385EE4500CBAE67 /* UISSFontValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984315590709000F311F /* UISSFontValueConverter.m */; };
+		A98C3D5E2385EE4500CBAE67 /* UISSTextAttributesValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469851155A6D0E000F311F /* UISSTextAttributesValueConverter.m */; };
+		A98C3D5F2385EE4900CBAE67 /* UISSIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D4155ABE500066CCC3 /* UISSIntegerValueConverter.m */; };
+		A98C3D602385EE4900CBAE67 /* UISSUIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F48244156259FE00CFA72E /* UISSUIntegerValueConverter.m */; };
+		A98C3D612385EE4900CBAE67 /* UISSFloatValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D8155ABE5E0066CCC3 /* UISSFloatValueConverter.m */; };
+		A98C3D622385EE4E00CBAE67 /* UISSSizeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0AF155A9D410066CCC3 /* UISSSizeValueConverter.m */; };
+		A98C3D632385EE4E00CBAE67 /* UISSRectValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0B3155A9D550066CCC3 /* UISSRectValueConverter.m */; };
+		A98C3D642385EE4E00CBAE67 /* UISSEdgeInsetsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BD155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.m */; };
+		A98C3D652385EE4E00CBAE67 /* UISSOffsetValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C1155AB8A50066CCC3 /* UISSOffsetValueConverter.m */; };
+		A98C3D662385EE4E00CBAE67 /* UISSPointValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0CC155ABCF40066CCC3 /* UISSPointValueConverter.m */; };
+		A98C3D672385EE5300CBAE67 /* UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B438B8143F668000F87518 /* UISS.m */; };
+		A98C3D682385EE5300CBAE67 /* UISSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8621584DCC70087BB1B /* UISSConfig.m */; };
+		A98C3D692385EE5300CBAE67 /* UISSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914CAE158F99BB00E04977 /* UISSStyle.m */; };
+		A98C3D6A2385EE5300CBAE67 /* UISS+GestureRecognizers.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BB6EF9D36E1EAF33EC36 /* UISS+GestureRecognizers.m */; };
 		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; };
 		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; };
 		C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
@@ -185,6 +236,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A98C3D332385EDAB00CBAE67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98C3D2D2385EDAB00CBAE67;
+			remoteInfo = UISSKit;
+		};
 		E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
@@ -201,9 +259,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A98C3D372385EDAB00CBAE67 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A98C3D362385EDAB00CBAE67 /* UISSKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A9541B912384C70A00856EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A9541B922384C70A00856EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A98C3D2E2385EDAB00CBAE67 /* UISSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UISSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98C3D302385EDAB00CBAE67 /* UISSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISSKit.h; sourceTree = "<group>"; };
+		A98C3D312385EDAB00CBAE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSSettingDescriptor.h; sourceTree = "<group>"; };
 		C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSImageResizingModeValueConverter.m; sourceTree = "<group>"; };
 		C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+UISS.m"; sourceTree = "<group>"; };
@@ -388,6 +463,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A98C3D2B2385EDAB00CBAE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AC143F668000F87518 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +486,7 @@
 				E12C10A8157ACB0C00F9008D /* QuartzCore.framework in Frameworks */,
 				E1ED8C211450D5E600302B61 /* libUISS.a in Frameworks */,
 				E1ED8BE31450D4E200302B61 /* UIKit.framework in Frameworks */,
+				A98C3D352385EDAB00CBAE67 /* UISSKit.framework in Frameworks */,
 				E1ED8BE41450D4E200302B61 /* Foundation.framework in Frameworks */,
 				E1ED8BE51450D4E200302B61 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -422,6 +505,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A98C3D2F2385EDAB00CBAE67 /* UISSKit */ = {
+			isa = PBXGroup;
+			children = (
+				A98C3D302385EDAB00CBAE67 /* UISSKit.h */,
+				A98C3D312385EDAB00CBAE67 /* Info.plist */,
+			);
+			path = UISSKit;
+			sourceTree = "<group>";
+		};
 		C8D2B365C39AD097A4C427D2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,10 +618,6 @@
 				D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */,
 				E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */,
 				E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */,
-				C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeValueConverter.h */,
-				C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */,
-				E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */,
-				E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */,
 				E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */,
 				E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */,
 				E1A775B01566E8D6000406CC /* UISSToolbarPositionValueConverter.h */,
@@ -800,6 +888,7 @@
 				E1B438B4143F668000F87518 /* UISS */,
 				E1ED8BE61450D4E200302B61 /* UISSDemo */,
 				E1ED8C111450D4E200302B61 /* UISSDemoTests */,
+				A98C3D2F2385EDAB00CBAE67 /* UISSKit */,
 				E1B438B1143F668000F87518 /* Frameworks */,
 				E1B438B0143F668000F87518 /* Products */,
 				E1EB6E1E15C07A8500F4055F /* UISSResources.bundle */,
@@ -813,6 +902,7 @@
 				E1B438AF143F668000F87518 /* libUISS.a */,
 				E1ED8BE11450D4E100302B61 /* UISSDemo.app */,
 				E1ED8C0B1450D4E200302B61 /* UISSDemoTests.octest */,
+				A98C3D2E2385EDAB00CBAE67 /* UISSKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -947,6 +1037,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A98C3D292385EDAB00CBAE67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98C3D322385EDAB00CBAE67 /* UISSKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AD143F668000F87518 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1008,6 +1106,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A98C3D2D2385EDAB00CBAE67 /* UISSKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98C3D3A2385EDAB00CBAE67 /* Build configuration list for PBXNativeTarget "UISSKit" */;
+			buildPhases = (
+				A98C3D292385EDAB00CBAE67 /* Headers */,
+				A98C3D2A2385EDAB00CBAE67 /* Sources */,
+				A98C3D2B2385EDAB00CBAE67 /* Frameworks */,
+				A98C3D2C2385EDAB00CBAE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UISSKit;
+			productName = UISSKit;
+			productReference = A98C3D2E2385EDAB00CBAE67 /* UISSKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E1B438AE143F668000F87518 /* UISS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B438D3143F668000F87518 /* Build configuration list for PBXNativeTarget "UISS" */;
@@ -1032,11 +1148,13 @@
 				E1ED8BDD1450D4E100302B61 /* Sources */,
 				E1ED8BDE1450D4E100302B61 /* Frameworks */,
 				E1ED8BDF1450D4E100302B61 /* Resources */,
+				A98C3D372385EDAB00CBAE67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */,
+				A98C3D342385EDAB00CBAE67 /* PBXTargetDependency */,
 			);
 			name = UISSDemo;
 			productName = UISSDemo;
@@ -1071,6 +1189,12 @@
 				LastTestingUpgradeCheck = 0700;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = 57things;
+				TargetAttributes = {
+					A98C3D2D2385EDAB00CBAE67 = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1088,11 +1212,19 @@
 				E1B438AE143F668000F87518 /* UISS */,
 				E1ED8BE01450D4E100302B61 /* UISSDemo */,
 				E1ED8C0A1450D4E200302B61 /* UISSDemoTests */,
+				A98C3D2D2385EDAB00CBAE67 /* UISSKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A98C3D2C2385EDAB00CBAE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1ED8BDF1450D4E100302B61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1161,6 +1293,61 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A98C3D2A2385EDAB00CBAE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98C3D632385EE4E00CBAE67 /* UISSRectValueConverter.m in Sources */,
+				A98C3D3E2385EE0C00CBAE67 /* UISSError.m in Sources */,
+				A98C3D582385EE3E00CBAE67 /* UISSSearchBarIconValueConverter.m in Sources */,
+				A98C3D3D2385EE0800CBAE67 /* UISSCodeGenerator.m in Sources */,
+				A98C3D402385EE1400CBAE67 /* UISSStatusViewController.m in Sources */,
+				A98C3D5C2385EE4500CBAE67 /* UISSImageValueConverter.m in Sources */,
+				A98C3D592385EE3E00CBAE67 /* UISSImageResizingModeValueConverter.m in Sources */,
+				A98C3D642385EE4E00CBAE67 /* UISSEdgeInsetsValueConverter.m in Sources */,
+				A98C3D612385EE4900CBAE67 /* UISSFloatValueConverter.m in Sources */,
+				A98C3D4D2385EE2F00CBAE67 /* UISSDisabledKeysPreprocessor.m in Sources */,
+				A98C3D5B2385EE4500CBAE67 /* UISSColorValueConverter.m in Sources */,
+				A98C3D4E2385EE3300CBAE67 /* UISSParser.m in Sources */,
+				A98C3D3C2385EE0300CBAE67 /* NSArray+UISS.m in Sources */,
+				A98C3D6A2385EE5300CBAE67 /* UISS+GestureRecognizers.m in Sources */,
+				A98C3D502385EE3800CBAE67 /* UILabel+UISS.m in Sources */,
+				A98C3D692385EE5300CBAE67 /* UISSStyle.m in Sources */,
+				A98C3D552385EE3E00CBAE67 /* UISSControlStateValueConverter.m in Sources */,
+				A98C3D672385EE5300CBAE67 /* UISS.m in Sources */,
+				A98C3D5F2385EE4900CBAE67 /* UISSIntegerValueConverter.m in Sources */,
+				A98C3D432385EE1C00CBAE67 /* UISSGeneratedCodeViewController.m in Sources */,
+				A98C3D5A2385EE3E00CBAE67 /* UISSTextAlignmentValueConverter.m in Sources */,
+				A98C3D652385EE4E00CBAE67 /* UISSOffsetValueConverter.m in Sources */,
+				A98C3D472385EE2800CBAE67 /* UISSPropertySetter.m in Sources */,
+				A98C3D682385EE5300CBAE67 /* UISSConfig.m in Sources */,
+				A98C3D532385EE3E00CBAE67 /* UISSBarMetricsValueConverter.m in Sources */,
+				A98C3D572385EE3E00CBAE67 /* UISSToolbarPositionValueConverter.m in Sources */,
+				A98C3D4C2385EE2F00CBAE67 /* UISSUserInterfaceIdiomPreprocessor.m in Sources */,
+				A98C3D602385EE4900CBAE67 /* UISSUIntegerValueConverter.m in Sources */,
+				A98C3D5E2385EE4500CBAE67 /* UISSTextAttributesValueConverter.m in Sources */,
+				A98C3D5D2385EE4500CBAE67 /* UISSFontValueConverter.m in Sources */,
+				A98C3D522385EE3E00CBAE67 /* UISSAbstractEnumValueConverter.m in Sources */,
+				A98C3D662385EE4E00CBAE67 /* UISSPointValueConverter.m in Sources */,
+				A98C3D422385EE1C00CBAE67 /* UISSConsoleViewController.m in Sources */,
+				A98C3D542385EE3E00CBAE67 /* UISSContentModeValueConverter.m in Sources */,
+				A98C3D452385EE2400CBAE67 /* UISSSettingsViewController.m in Sources */,
+				A98C3D4A2385EE2800CBAE67 /* UISSAxisParameter.m in Sources */,
+				A98C3D482385EE2800CBAE67 /* UISSArgument.m in Sources */,
+				A98C3D4F2385EE3300CBAE67 /* UISSParserContext.m in Sources */,
+				A98C3D562385EE3E00CBAE67 /* UISSSegmentedControlSegmentValueConverter.m in Sources */,
+				A98C3D622385EE4E00CBAE67 /* UISSSizeValueConverter.m in Sources */,
+				A98C3D462385EE2400CBAE67 /* UISSSettingDescriptor.m in Sources */,
+				A98C3D4B2385EE2F00CBAE67 /* UISSVariablesPreprocessor.m in Sources */,
+				A98C3D512385EE3800CBAE67 /* UIView+UISS.m in Sources */,
+				A98C3D492385EE2800CBAE67 /* UISSProperty.m in Sources */,
+				A98C3D3F2385EE1000CBAE67 /* UISSStatusWindow.m in Sources */,
+				A98C3D412385EE1800CBAE67 /* UISSStatusView.m in Sources */,
+				A98C3D3B2385EDFD00CBAE67 /* NSString+UISS.m in Sources */,
+				A98C3D442385EE1C00CBAE67 /* UISSErrorsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AB143F668000F87518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1264,6 +1451,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A98C3D342385EDAB00CBAE67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A98C3D2D2385EDAB00CBAE67 /* UISSKit */;
+			targetProxy = A98C3D332385EDAB00CBAE67 /* PBXContainerItemProxy */;
+		};
 		E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E1B438AE143F668000F87518 /* UISS */;
@@ -1312,6 +1504,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A98C3D382385EDAB00CBAE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = UISSKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertwijas.UISSKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A98C3D392385EDAB00CBAE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = UISSKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertwijas.UISSKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E1B438D1143F668000F87518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1338,7 +1608,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1390,7 +1659,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1448,6 +1716,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robertwijas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1463,6 +1732,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robertwijas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1510,6 +1780,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A98C3D3A2385EDAB00CBAE67 /* Build configuration list for PBXNativeTarget "UISSKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98C3D382385EDAB00CBAE67 /* Debug */,
+				A98C3D392385EDAB00CBAE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

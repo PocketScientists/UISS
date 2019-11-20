@@ -7,6 +7,7 @@
 //
 
 #import "UISSContentModeValueConverter.h"
+#import <UIKit/UIKit.h>
 
 @implementation UISSContentModeValueConverter
 

@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "UISSParser.h"
 
 extern NSString *const UISSStyleWillDownloadNotification;

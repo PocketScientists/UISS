@@ -3,6 +3,7 @@
 //
 
 #import "UISSSegmentedControlSegmentValueConverter.h"
+#import <UIKit/UIKit.h>
 
 @implementation UISSSegmentedControlSegmentValueConverter
 

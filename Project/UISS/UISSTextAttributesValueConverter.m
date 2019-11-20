@@ -5,14 +5,14 @@
 #import "UISSTextAttributesValueConverter.h"
 #import "UISSFontValueConverter.h"
 #import "UISSColorValueConverter.h"
-#import "UISSOffsetValueConverter.h"
+#import "UISSSizeValueConverter.h"
 #import "UISSArgument.h"
 
 @interface UISSTextAttributesValueConverter ()
 
 @property(nonatomic, strong) UISSFontValueConverter *fontConverter;
 @property(nonatomic, strong) UISSColorValueConverter *colorConverter;
-@property(nonatomic, strong) UISSOffsetValueConverter *offsetConverter;
+@property(nonatomic, strong) UISSSizeValueConverter *sizeConverter;
 
 @end
 
@@ -24,7 +24,7 @@
     if (self) {
         self.fontConverter = [[UISSFontValueConverter alloc] init];
         self.colorConverter = [[UISSColorValueConverter alloc] init];
-        self.offsetConverter = [[UISSOffsetValueConverter alloc] init];
+        self.sizeConverter = [[UISSSizeValueConverter alloc] init];
     }
     return self;
 }
@@ -62,11 +62,24 @@
         [self convertProperty:UISS_HIGHLIGHTED_TEXT_COLOR_KEY fromDictionary:dictionary toDictionary:attributes withKey:@"UISSTextAttributeHighlightedTextColor"
                usingConverter:self.colorConverter];
 
-        [self convertProperty:UISS_TEXT_SHADOW_COLOR_KEY fromDictionary:dictionary toDictionary:attributes withKey:UITextAttributeTextShadowColor
-               usingConverter:self.colorConverter];
+        id shadowColor = [dictionary objectForKey:UISS_TEXT_SHADOW_COLOR_KEY];
+        id convertedShadowColor = nil;
+        if (shadowColor) {
+            convertedShadowColor = [self.colorConverter convertValue:shadowColor];
+        }
 
-        [self convertProperty:UISS_TEXT_SHADOW_OFFSET_KEY fromDictionary:dictionary toDictionary:attributes withKey:UITextAttributeTextShadowOffset
-               usingConverter:self.offsetConverter];
+        id shadowOffset = [dictionary objectForKey:UISS_TEXT_SHADOW_OFFSET_KEY];
+        id convertedShadowOffset = nil;
+        if (shadowOffset) {
+            convertedShadowOffset = [self.sizeConverter convertValue:shadowOffset];
+        }
+
+        if (convertedShadowColor || convertedShadowOffset) {
+            NSShadow *shadow = [[NSShadow alloc] init];
+            shadow.shadowColor = convertedShadowColor;
+            shadow.shadowOffset = ((NSValue *)convertedShadowOffset).CGSizeValue;
+            [attributes setObject:shadow forKey:NSShadowAttributeName];
+        }
 
         if (attributes.count) {
             return attributes;
@@ -105,7 +118,7 @@
 
         id textShadowOffset = [dictionary objectForKey:UISS_TEXT_SHADOW_OFFSET_KEY];
         if (textShadowOffset) {
-            [objectAndKeys appendFormat:@"[NSValue valueWithUIOffset:%@], %@,", [self.offsetConverter generateCodeForValue:textShadowOffset], @"UITextAttributeTextShadowOffset"];
+            [objectAndKeys appendFormat:@"[NSValue valueWithCGSize:%@], %@,", [self.sizeConverter generateCodeForValue:textShadowOffset], @"UITextAttributeTextShadowOffset"];
         }
 
         if (objectAndKeys.length) {

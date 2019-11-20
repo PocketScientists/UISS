@@ -3,6 +3,7 @@
 //
 
 #import "UISSImageResizingModeValueConverter.h"
+#import <UIKit/UIKit.h>
 
 @implementation UISSImageResizingModeValueConverter
 

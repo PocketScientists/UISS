@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, UISSSettingDescriptorEditorType) {
     UISSSettingDescriptorEditorTypeText = 0,

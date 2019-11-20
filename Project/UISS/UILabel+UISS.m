@@ -18,15 +18,14 @@ NSString *const UISSTextAttributeHighlightedTextColor = @"UISSTextAttributeHighl
     if (textColor != nil && self.textColor != textColor) {
         self.textColor = textColor;
     }
-    UIColor *textShadowColor = [textAttributes objectForKey:UITextAttributeTextShadowColor];
-    if (textShadowColor != nil && self.shadowColor != textShadowColor) {
-        self.shadowColor = textShadowColor;
-    }
-    NSValue *shadowOffsetValue = [textAttributes objectForKey:UITextAttributeTextShadowOffset];
-    if (shadowOffsetValue) {
-        UIOffset shadowOffset = [shadowOffsetValue UIOffsetValue];
-        if (!UIOffsetEqualToOffset(shadowOffset, UIOffsetMake(self.shadowOffset.height, self.shadowOffset.width))) {
-            self.shadowOffset = CGSizeMake(shadowOffset.horizontal, shadowOffset.vertical);
+    NSShadow *textShadow = [textAttributes objectForKey:NSShadowAttributeName];
+    if (textShadow != nil) {
+        if (self.shadowColor != textShadow.shadowColor) {
+            self.shadowColor = textShadow.shadowColor;
+        }
+        CGSize shadowOffset = textShadow.shadowOffset;
+        if (!CGSizeEqualToSize(self.shadowOffset, shadowOffset)) {
+            self.shadowOffset = textShadow.shadowOffset;
         }
     }
     UIColor *highlightedTextColor = [textAttributes objectForKey:UISSTextAttributeHighlightedTextColor];

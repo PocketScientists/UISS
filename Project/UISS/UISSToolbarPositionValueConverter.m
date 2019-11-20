@@ -3,6 +3,7 @@
 //
 
 #import "UISSToolbarPositionValueConverter.h"
+#import <UIKit/UIKit.h>
 
 @implementation UISSToolbarPositionValueConverter
 

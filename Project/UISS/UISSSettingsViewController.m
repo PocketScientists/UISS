@@ -147,35 +147,39 @@
     UISSSettingDescriptor *settingDescriptor = self.settingDescriptors[(NSUInteger) indexPath.section];
 
     if (settingDescriptor.editorType == UISSSettingDescriptorEditorTypeText) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Change Setting"
-                                                            message:settingDescriptor.title
-                                                           delegate:self
-                                                  cancelButtonTitle:@"Cancel"
-                                                  otherButtonTitles:@"Change", nil];
-        alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-        alertView.delegate = self;
+        //let alert = UIAlertController(title: "Oops!", message:"This feature isn't available right now", preferredStyle: .Alert)
+        //alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+        //self.present(alert, animated: true){}
 
-        UITextField *textField = [alertView textFieldAtIndex:0];
-        textField.text = settingDescriptor.stringValue;
-        textField.keyboardType = settingDescriptor.keyboardType;
+        UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"Change Setting"
+                                                                                 message:settingDescriptor.title preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel"
+                                                            style:UIAlertActionStyleCancel
+                                                          handler:^(UIAlertAction * _Nonnull action) {
+            NSIndexPath *indexPathForSelectedRow = self.tableView.indexPathForSelectedRow;
+            [self.tableView deselectRowAtIndexPath:indexPathForSelectedRow animated:YES];
+        }]];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"Change"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * _Nonnull action) {
+            NSIndexPath *indexPathForSelectedRow = self.tableView.indexPathForSelectedRow;
 
-        [alertView show];
+            UISSSettingDescriptor *settingDescriptor = self.settingDescriptors[(NSUInteger) indexPathForSelectedRow.section];
+            settingDescriptor.valueChangeHandler(alertController.textFields.firstObject.text);
+            [self.tableView reloadRowsAtIndexPaths:@[indexPathForSelectedRow]
+                                  withRowAnimation:UITableViewRowAnimationAutomatic];
+
+            [self.tableView deselectRowAtIndexPath:indexPathForSelectedRow animated:YES];
+        }]];
+
+        [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.text = settingDescriptor.stringValue;
+            textField.keyboardType = settingDescriptor.keyboardType;
+        }];
+        
+        [self presentViewController:alertController animated:YES completion:^{}];
     }
-}
-
-#pragma mark - AlertView Delegate
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSIndexPath *indexPathForSelectedRow = self.tableView.indexPathForSelectedRow;
-
-    if (buttonIndex != alertView.cancelButtonIndex) {
-        UISSSettingDescriptor *settingDescriptor = self.settingDescriptors[(NSUInteger) indexPathForSelectedRow.section];
-        settingDescriptor.valueChangeHandler([alertView textFieldAtIndex:0].text);
-        [self.tableView reloadRowsAtIndexPaths:@[indexPathForSelectedRow]
-                              withRowAnimation:UITableViewRowAnimationAutomatic];
-    }
-
-    [self.tableView deselectRowAtIndexPath:indexPathForSelectedRow animated:YES];
 }
 
 - (void)switchAccessoryViewValueChanged:(UISwitch *)switchAccessoryView {

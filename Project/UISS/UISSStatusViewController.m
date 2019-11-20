@@ -150,14 +150,14 @@
 
 #pragma mark - Interface Orientation
 
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration; {
-    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
-    self.view.window.hidden = YES; // Bad animation workaround
-}
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation; {
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    self.view.window.hidden = NO; // Bad animation workaround
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        self.view.window.hidden = YES; // Bad animation workaround
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        self.view.window.hidden = NO; // Bad animation workaround
+    }];
 }
 
 - (BOOL)shouldAutorotate

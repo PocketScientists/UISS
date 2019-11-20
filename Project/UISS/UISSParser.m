@@ -3,6 +3,7 @@
 //
 
 #import "UISSParser.h"
+#import "UISSMacros.h"
 
 #import "UISSConfig.h"
 #import "UISSDictionaryPreprocessor.h"

@@ -3,6 +3,7 @@
 //
 
 #import "UISSSearchBarIconValueConverter.h"
+#import <UIKit/UIKit.h>
 
 @implementation UISSSearchBarIconValueConverter
 
