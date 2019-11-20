@@ -48,7 +48,6 @@
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Phone",
                                                                                                                @"Pad",
                                                                                                                nil]];
-    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     [segmentedControl addTarget:self action:@selector(segmentedControlValueChanged:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.titleView = segmentedControl;
 }
@@ -63,10 +62,10 @@
 - (void)updateErrorsButton;
 {
     if (self.errors.count) {
-        NSString *buttonTitle = [NSString stringWithFormat:@"Errors (%d)", self.errors.count];
+        NSString *buttonTitle = [NSString stringWithFormat:@"Errors (%lu)", (unsigned long)self.errors.count];
         
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:buttonTitle
-                                                                                  style:UIBarButtonItemStyleBordered 
+                                                                                  style:UIBarButtonItemStylePlain
                                                                                  target:self 
                                                                                  action:@selector(presentErrors)];
     } else {
@@ -106,9 +105,13 @@
     }];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
+- (BOOL)shouldAutorotate
 {
     return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end

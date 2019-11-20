@@ -81,7 +81,7 @@
 
 - (UIBarButtonItem *)createCloseBarButton {
     return [[UIBarButtonItem alloc] initWithTitle:@"Close"
-                                            style:UIBarButtonItemStyleBordered
+                                            style:UIBarButtonItemStylePlain
                                            target:self
                                            action:@selector(close)];
 }
@@ -90,8 +90,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation; {
+- (BOOL)shouldAutorotate
+{
     return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end

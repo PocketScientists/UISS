@@ -10,11 +10,11 @@ NSString *const UISSTextAttributeHighlightedTextColor = @"UISSTextAttributeHighl
 
 - (void)setTextAttributes:(NSDictionary *)textAttributes;
 {
-    UIFont *font = [textAttributes objectForKey:UITextAttributeFont];
+    UIFont *font = [textAttributes objectForKey:NSFontAttributeName];
     if (font != nil && self.font != font) {
         self.font = font;
     }
-    UIColor *textColor = [textAttributes objectForKey:UITextAttributeTextColor];
+    UIColor *textColor = [textAttributes objectForKey:NSForegroundColorAttributeName];
     if (textColor != nil && self.textColor != textColor) {
         self.textColor = textColor;
     }

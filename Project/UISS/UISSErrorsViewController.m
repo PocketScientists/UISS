@@ -35,7 +35,7 @@
 
 - (void)update {
     if (self.errors.count) {
-        self.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", self.errors.count];
+        self.tabBarItem.badgeValue = [NSString stringWithFormat:@"%lu", (unsigned long)self.errors.count];
     } else {
         self.tabBarItem.badgeValue = nil;
     }
@@ -65,8 +65,13 @@
     return cell;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation; {
+- (BOOL)shouldAutorotate
+{
     return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end

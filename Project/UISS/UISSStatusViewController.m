@@ -160,8 +160,13 @@
     self.view.window.hidden = NO; // Bad animation workaround
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation; {
+- (BOOL)shouldAutorotate
+{
     return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end
