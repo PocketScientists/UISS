@@ -22,8 +22,6 @@
 		C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B9582FDA98878B10CBA5 /* UISSTextAlignmentValueConverter.h */; };
 		C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
 		C8D2BF8B489FC38682ED03F5 /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
-		D4B2CF5F174B9C3D007FAE3A /* UISSContentModeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */; };
-		D4B2CF60174B9C3D007FAE3A /* UISSContentModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */; };
 		E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; };
 		E1076BEB157F6B1A00886759 /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
 		E10D5E551574BBA400185009 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E4B1574BBA400185009 /* Icon-72.png */; };
@@ -217,8 +215,6 @@
 		C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSSettingsViewController.m; sourceTree = "<group>"; };
 		C8D2BEDF507CA856D0EC5FDF /* UISSControlStateValueConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSControlStateValueConverterTests.m; sourceTree = "<group>"; };
 		C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UISS.m"; sourceTree = "<group>"; };
-		D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSContentModeValueConverter.h; sourceTree = "<group>"; };
-		D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSContentModeValueConverter.m; sourceTree = "<group>"; };
 		E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSStatusViewController.h; sourceTree = "<group>"; };
 		E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSStatusViewController.m; sourceTree = "<group>"; };
 		E10D5E4B1574BBA400185009 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -522,14 +518,8 @@
 				E129E5ED1563F54800E93185 /* UISSAbstractEnumValueConverter.m */,
 				E129E5DC1563DE5000E93185 /* UISSBarMetricsValueConverter.h */,
 				E129E5DD1563DE5000E93185 /* UISSBarMetricsValueConverter.m */,
-				D4B2CF5D174B9C3D007FAE3A /* UISSContentModeValueConverter.h */,
-				D4B2CF5E174B9C3D007FAE3A /* UISSContentModeValueConverter.m */,
 				E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */,
 				E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */,
-				C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeValueConverter.h */,
-				C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */,
-				E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */,
-				E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */,
 				E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */,
 				E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */,
 				E1A775B01566E8D6000406CC /* UISSToolbarPositionValueConverter.h */,
@@ -1000,7 +990,6 @@
 				C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */,
 				C8D2B5AED4BB2B1D68E5BA5C /* UISS+GestureRecognizers.h in Headers */,
 				E1C64FF616DFE8AF004861ED /* UISSMacros.h in Headers */,
-				D4B2CF5F174B9C3D007FAE3A /* UISSContentModeValueConverter.h in Headers */,
 				C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1060,7 +1049,7 @@
 			name = UISSDemoTests;
 			productName = UISSDemoTests;
 			productReference = E1ED8C0B1450D4E200302B61 /* UISSDemoTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1068,7 +1057,8 @@
 		E1B438A6143F667F00F87518 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0700;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = 57things;
 			};
 			buildConfigurationList = E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */;
@@ -1209,7 +1199,6 @@
 				C8D2BDE3D04A0D24CCA2E6B8 /* UISSSettingsViewController.m in Sources */,
 				C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */,
 				C8D2BA99525048D454BCA45D /* UISS+GestureRecognizers.m in Sources */,
-				D4B2CF60174B9C3D007FAE3A /* UISSContentModeValueConverter.m in Sources */,
 				C8D2BCA04FA368B1EF9B6692 /* UISSTextAlignmentValueConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1314,10 +1303,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1331,15 +1319,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1352,22 +1336,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
@@ -1413,6 +1393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
@@ -1426,6 +1407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
