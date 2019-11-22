@@ -58,6 +58,9 @@
 		A98C3D682385EE5300CBAE67 /* UISSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8621584DCC70087BB1B /* UISSConfig.m */; };
 		A98C3D692385EE5300CBAE67 /* UISSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914CAE158F99BB00E04977 /* UISSStyle.m */; };
 		A98C3D6A2385EE5300CBAE67 /* UISS+GestureRecognizers.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BB6EF9D36E1EAF33EC36 /* UISS+GestureRecognizers.m */; };
+		A98C3D6B2385F55B00CBAE67 /* UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B438B7143F668000F87518 /* UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A98C3D6C2385F56300CBAE67 /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A98C3D6D2385F57100CBAE67 /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; };
 		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; };
 		C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
@@ -225,7 +228,6 @@
 		E1ED8C0D1450D4E200302B61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B43904143F702200F87518 /* UIKit.framework */; };
 		E1ED8C0E1450D4E200302B61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438B2143F668000F87518 /* Foundation.framework */; };
 		E1ED8C161450D4E200302B61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1ED8C141450D4E200302B61 /* InfoPlist.strings */; };
-		E1ED8C211450D5E600302B61 /* libUISS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438AF143F668000F87518 /* libUISS.a */; };
 		E1F2B9C515814486008EE145 /* UISSPrivateAppearanceMethodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F2B9C415814486008EE145 /* UISSPrivateAppearanceMethodsTests.m */; };
 		E1F35EB11593A3F20074389E /* UIView+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F35EAF1593A3F20074389E /* UIView+UISS.h */; };
 		E1F35EB21593A3F20074389E /* UIView+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F35EB01593A3F20074389E /* UIView+UISS.m */; };
@@ -242,13 +244,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A98C3D2D2385EDAB00CBAE67;
 			remoteInfo = UISSKit;
-		};
-		E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E1B438AE143F668000F87518;
-			remoteInfo = UISS;
 		};
 		E1ED8C0F1450D4E200302B61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -484,7 +479,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12C10A8157ACB0C00F9008D /* QuartzCore.framework in Frameworks */,
-				E1ED8C211450D5E600302B61 /* libUISS.a in Frameworks */,
 				E1ED8BE31450D4E200302B61 /* UIKit.framework in Frameworks */,
 				A98C3D352385EDAB00CBAE67 /* UISSKit.framework in Frameworks */,
 				E1ED8BE41450D4E200302B61 /* Foundation.framework in Frameworks */,
@@ -1041,6 +1035,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98C3D6D2385F57100CBAE67 /* UISSConfig.h in Headers */,
+				A98C3D6B2385F55B00CBAE67 /* UISS.h in Headers */,
+				A98C3D6C2385F56300CBAE67 /* UISSStyle.h in Headers */,
 				A98C3D322385EDAB00CBAE67 /* UISSKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1153,7 +1150,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */,
 				A98C3D342385EDAB00CBAE67 /* PBXTargetDependency */,
 			);
 			name = UISSDemo;
@@ -1455,11 +1451,6 @@
 			isa = PBXTargetDependency;
 			target = A98C3D2D2385EDAB00CBAE67 /* UISSKit */;
 			targetProxy = A98C3D332385EDAB00CBAE67 /* PBXContainerItemProxy */;
-		};
-		E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E1B438AE143F668000F87518 /* UISS */;
-			targetProxy = E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */;
 		};
 		E1ED8C101450D4E200302B61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
